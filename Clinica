@@ -1,0 +1,55 @@
+public class Clinica
+{
+   private String nombre;
+   private String direccion;
+   PersonalSalud personal;
+   Paciente pacientes;
+
+   public Clinica()
+   {}
+
+    public Clinica(String nombre, String direccion, PersonalSalud personal)
+    {
+        this.nombre=nombre;
+        this.direccion=direccion;
+        this.personal=personal;
+        this.pacientes=pacientes;
+    }
+
+    public String getNombre()
+    {
+        return nombre;
+    }
+
+    public void setNombre(String nombre)
+    {
+        this.nombre=nombre;
+    }
+
+    public String getDireccion()
+    {
+        return direccion;
+    }
+
+
+    public Paciente getPacientes()
+    {
+        return pacientes;
+    }
+
+    public void setPacientes(Paciente pacientes)
+    {
+        this.pacientes=pacientes;
+    }
+
+    public PersonalSalud getPersonal()
+    {
+        return personal;
+    }
+
+    public void setPersonal(PersonalSalud personal)
+    {
+        this.personal=personal;
+    }
+
+}

@@ -1,0 +1,70 @@
+import java.util.*;
+
+public class Paciente extends Persona
+{
+    private Date FechaD;
+    private boolean casa;
+    LugarProcedencia lugarprocedencia;
+    Estado estado;
+    Clinica clinica;
+
+    public Paciente(Date FechaD, boolean casa, LugarProcedencia lugarprocedencia,Estado estado, Clinica clinica, String nombre, String documento, String direccion, Integer edad,String genero, Date FechaN, Paciente contactos)
+    {
+        super(documento, nombre, edad, direccion, genero, FechaN, contactos);
+        this.FechaD=FechaD;
+        this.casa=casa;
+        this.lugarprocedencia=lugarprocedencia;
+        this.estado=estado;
+        this.clinica=clinica;
+    }
+
+    public Date getFechaD()
+    {
+        return FechaD;
+    }
+
+    public void setFechaD(Date FechaD)
+    {
+        this.FechaD=FechaD;
+    }
+
+    public boolean getCasa()
+    {
+        return casa;
+    }
+
+    public void setCasa(boolean casa)
+    {
+        this.casa=casa;
+    }
+
+    public LugarProcedencia getLugarprocedencia()
+    {
+        return lugarprocedencia;
+    }
+
+    public void setLugarprocedencia(LugarProcedencia lugarprocedencia)
+    {
+        this.lugarprocedencia=lugarprocedencia;
+    }
+
+    public Estado getEstado()
+    {
+        return estado;
+    }
+
+    public void setEstado(Estado estado)
+    {
+        this.estado=estado;
+    }
+
+    public Clinica getClinica()
+    {
+        return clinica;
+    }
+
+    public void setClinica(Clinica clinica)
+    {
+        this.clinica=clinica;
+    }
+}

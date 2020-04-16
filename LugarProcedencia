@@ -1,0 +1,23 @@
+public class LugarProcedencia
+{
+    private String lugar;
+
+    public LugarProcedencia()
+    {
+    }
+
+    public LugarProcedencia(String lugar)
+    {
+        this.lugar=lugar;
+    }
+    public String getLugar()
+    {
+        return lugar;
+    }
+
+    public void setLugar(String lugar)
+    {
+        this.lugar=lugar;
+    }
+
+}

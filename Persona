@@ -1,0 +1,88 @@
+import java.util.*;
+
+public class Persona
+{private String documento;
+    private String nombre;
+    private int edad;
+    private String direccion;
+    private String genero;
+    private Date fechaNac;
+    Paciente contactos;
+
+    public Persona()
+    {
+    }
+
+     public Persona(String nombre,String documento,int edad,String direccion,String genero,Date fechaNac,Paciente contactos)
+    {
+        this.documento=documento;
+        this.nombre=nombre;
+        this.edad=edad;
+        this.direccion=direccion;
+        this.genero=genero;
+        this.fechaNac=fechaNac;
+        this.contactos=contactos;
+
+
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getEdad()
+    {
+        return edad;
+    }
+
+    public void setEdad(Integer edad)
+    {
+        this.edad=edad;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public Date getFechaNac() {
+        return fechaNac;
+    }
+
+    public void setFechaNac(Date FechaNac) {
+        this.fechaNac = fechaNac;
+    }
+
+    public Paciente getContactos ()
+    {
+      return contactos;
+    }
+
+    public void setContactos(Paciente contactos)
+    {
+        this.contactos=contactos;
+    }
+}

@@ -1,0 +1,47 @@
+
+import java.util.*;
+public class PersonalSalud extends Persona
+{
+    Especialidad especialidad;
+    Clinica clinica;
+    Prueba pruebas;
+
+    public PersonalSalud(Especialidad especialidad, Clinica clinica, Prueba pruebas, String nombre, String documento, int edad, String direccion, String genero, Date fechaNac, Paciente contactos)
+
+    {
+        super(documento,nombre,edad,direccion,genero,fechaNac,contactos);
+        this.especialidad=especialidad;
+        this.clinica=clinica;
+        this.pruebas=pruebas;
+    }
+    public Especialidad getEspecialidad()
+   {
+       return especialidad;
+   }
+
+   public void setEspecialidad(Especialidad especialidad)
+   {
+       this.especialidad=especialidad;
+   }
+
+   public Clinica getClinica()
+   {
+       return clinica;
+   }
+
+   public void setClinica(Clinica clinica)
+   {
+       this.clinica=clinica;
+   }
+
+   public Prueba getPruebas()
+   {
+       return pruebas;
+   }
+
+   public void setPruebas(Prueba pruebas)
+   {
+       this.pruebas=pruebas;
+   }
+
+}

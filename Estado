@@ -1,0 +1,15 @@
+public class Estado
+{
+   public enum estado
+   {
+       POSITIVO,
+
+       NEGATIVO,
+
+       RECUPERADO,
+
+       SOSPECHOSO,
+
+       MUERTO
+    }
+}

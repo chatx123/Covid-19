@@ -1,0 +1,15 @@
+public class Especialidad
+{
+   public enum especialidad
+   {
+       MEDICO,
+
+       ENFERMERO,
+
+       AUXILIAR,
+
+       ADMINISTRATIVO,
+
+       GENEREAL
+    }
+}
